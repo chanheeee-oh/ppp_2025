@@ -34,12 +34,14 @@ banana_kcal_per_100g = 77
 total_cal = hanrabong_cal+strawberry_cal+banana_cal+hanrabong_cal
 print(f"섭취한 총칼로리는 {total_cal}입니다.")
 
+import math
 x1 = int(input("첫 번째 점의 x좌표를 입력하세요"))
 y1 = int(input("두 번째 점의 y좌표를 입력하세요"))
 x2 = int(input("세 번째 점의 x좌표를 입력하세요"))
 y2 = int(input("네 번째 점의 y좌표를 입력하세요"))
 
-distance = ((x2-x1)**2 + (y2-y1)**2)**0.5
+distance = math.sqrt((x2-x1)**2 + (y2-y1)**2)**0.5
+
 print(f" 두 점 사이의 거리는 {distance}입니다")
 
 
